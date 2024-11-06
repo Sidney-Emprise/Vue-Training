@@ -4,17 +4,23 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <!--<img alt="Seemly Sand logo" class="logo" src="./assets/SeemlySandLogo.svg" width="225" height="225" /> -->
+  <div>
+    <header>
+      <img alt="Seemly Sand logo" class="logo" src="./assets/SeemlySandLogo.svg" width="225" height="225" /> 
 
-    <div class="wrapper">
-      <HelloWorld name="Sidney Sanders" msg = "Software Developer II with Emprise Technologies"/>
-    </div>
-  </header>
+      <div class="wrapper">
+        <HelloWorld name="Sidney R Sanders" msg = "Software Developer II with Emprise Technologies"/>
+      </div>
+      <nav>
+        <RouterLink to="/">Go to Home</RouterLink>
+        <RouterLink to="/about">Go to About</RouterLink>
+      </nav>
+    </header>
 
-  <main>
+    <RouterView />
     <TheWelcome />
-  </main>
+
+  </div>
 </template>
 
 <style scoped>
@@ -32,6 +38,7 @@ header {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
+    justify-content: center;
   }
 
   .logo {
