@@ -14,9 +14,10 @@ import TheWelcome from '../components/TheWelcome.vue'
 <style>
 @media (min-width: 1024px) {
   .about {
-    min-height: 100vh;
-    display: flex;
+    min-height: 50vh;
+    /* display: flex;
     align-items: center;
+    padding: inherit; */
   }
 }
 </style>

@@ -2,8 +2,7 @@
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 80px;
   font-weight: normal;
 }
 
@@ -14,10 +13,17 @@ a,
   transition: 0.4s;
   padding: 3px;
 }
+.purple {
+  text-decoration: none;
+  color: rgb(149, 69, 255);
+  transition: 0.4s;
+  padding: 3px;
+}
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    /* background-color: hsla(160, 100%, 37%, 0.2); */
+    background-color: hsla(283, 95%, 83%, 0.2);
   }
 }
 
@@ -29,7 +35,7 @@ a,
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    flex-direction: column;
+    grid-template-rows: 80fr 200fr;
   }
 }

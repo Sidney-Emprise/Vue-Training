@@ -60,7 +60,6 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {
@@ -72,6 +71,7 @@ nav a:first-of-type {
     place-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
   }
 
   nav {
