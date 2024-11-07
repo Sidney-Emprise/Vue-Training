@@ -54,12 +54,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
+  margin: auto;
+  /* font-weight: normal; */
 }
 
 body {
   min-height: 100vh;
+  max-width: 1280px;
   color: var(--color-text);
   background: var(--color-background);
   transition:
@@ -83,4 +84,5 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  justify-content: center;
 }

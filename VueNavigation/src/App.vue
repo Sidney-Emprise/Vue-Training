@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/SeemlySandLogo.svg" width="225" height="225" />
+    <img alt="Vue logo" class="logo" src="@/assets/SeemlySandLogo.svg" width="200" height="200" />
 
     <div class="wrapper">
       <HelloWorld msg="Sidney Sanders" />
@@ -13,6 +13,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/strategy">Strategy</RouterLink>
       </nav>
     </div>
   </header>
@@ -58,8 +59,9 @@ nav a:first-of-type {
 
 @media (min-width: 1024px) {
   header {
-    display: flex;
+    display: inline-flex;
     place-items: center;
+    justify-content: left;
   }
 
   .logo {
