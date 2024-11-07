@@ -1,8 +1,9 @@
 <!-- Strategy page with profile summary and introduction to me as a developer for Emprise. -->
 <script setup lang="ts">
-import StrategyDesign from '../components/StrategyDesign.vue'
-import StrategyDocumentation from '../components/StrategyDocumentation.vue'
-import StrategyRtm from '../components/StrategyRtm.vue'
+import StrategyDesign from '../components/StrategyPage/StrategyDesign.vue'
+import StrategyDocumentation from '../components/StrategyPage/StrategyDocumentation.vue'
+import StrategyRtm from '../components/StrategyPage/StrategyRtm.vue'
+
 </script>
 <template>
   

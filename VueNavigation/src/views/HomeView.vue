@@ -1,6 +1,6 @@
 <!-- Home page with profile summary and introduction to me as a developer for Emprise. -->
 <script setup lang="ts">
-import SkillList from '../components/SkillList.vue'
+import SkillList from '../components/HomePage/SkillList.vue'
 </script>
 
 
