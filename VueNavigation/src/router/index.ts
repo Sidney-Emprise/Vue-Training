@@ -23,6 +23,12 @@ const router = createRouter({
 
       component: () => import('../views/StrategyView.vue'),
     },
+    {
+      path:'/help',
+      name: 'help',
+
+      component: () => import('../views/HelpView.vue'),
+    },
   ],
 })
 
