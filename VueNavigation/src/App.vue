@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/SeemlySandLogo.svg" width="200" height="200" />
+    <img alt="Vue logo" class="logo" src="@/assets/SeemlySandLogo.svg" width="125" height="125" />
 
     <div class="wrapper">
       <HelloWorld msg="Sidney Sanders" />
@@ -30,14 +30,16 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  /* margin: 0 auto 2rem; */
 }
 
 nav {
   width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: -1rem;
 }
 
 nav a.router-link-exact-active {
@@ -63,17 +65,20 @@ nav a:first-of-type {
     display: inline-flex;
     place-items: center;
     justify-content: left;
+    gap: 2rem;
   }
 
   .logo {
-    margin: 0 2rem 0 0;
+    margin: 0rem 0rem 3rem 0rem;
+    border-radius: 50%;
+    border: 2px solid rgb(149, 69, 255);
   }
 
   header .wrapper {
-    display: flex;
-    place-items: flex-start;
+    display: inline-flex;
+    place-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
   }
 

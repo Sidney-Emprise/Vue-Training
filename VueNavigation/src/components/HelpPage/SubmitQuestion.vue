@@ -3,7 +3,7 @@ Modal component with customizable slots and CSS transitions.
 -->
 
 <script>
-import Modal from '../components/HelpPage/Modal.vue'
+import Modal from './Modal.vue'
 
 export default {
   components: {
@@ -24,7 +24,10 @@ export default {
     <!-- use the modal component, pass in the prop -->
     <modal :show="showModal" @close="showModal = false">
       <template #header>
-        <h3>Custom Header</h3>
+        <h3>Submit your Question</h3>
+      </template>
+      <template #body>
+        <p>This is a preview of your email, if you are satisfied with your submission hit OK.</p>
       </template>
     </modal>
   </Teleport>

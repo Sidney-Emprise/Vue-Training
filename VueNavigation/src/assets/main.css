@@ -13,6 +13,7 @@ a,
   color: rgb(149, 69, 255);
   transition: 0.4s;
   padding: 3px;
+  left: -5px;
 }
 .section-heading {
   text-decoration: none;
@@ -27,22 +28,117 @@ a,
   padding: 3px;
 }
 
+/* Table Css */
+table {
+  display: grid;
+  justify-content: start;
+  padding: 20px;
+
+}
+table.purpleBubble {
+  border: 1px solid rgb(243, 217, 255);
+  border-radius: 25px;
+  /* background-color: rgb(225, 193, 255); */
+}
+table.skills {
+  display: grid;
+  box-sizing: border-box;
+  text-indent: initial;
+  justify-content: start;
+}
+
+td.labelColumn {
+  width: 5rem;
+  /* border: 1px solid rgb(145, 145, 145); */
+  vertical-align: top;
+}
+
+/* Text components  */
+p {
+  display: flex;
+  flex-direction: row;
+  margin-right: 2rem;
+}
+textarea {
+  margin-left: 2rem;
+  height: 75pt;
+  width: 20fr;
+  font-size: inherit;
+  border-radius: 6px;
+  padding: 5px;
+}
+/* Twitch Purple Style  */
+textarea.twitch{
+  font-size: 14px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+  display: block;
+  height: 136px;
+}
+textarea.twitch:hover {
+      border-color: #ccc;
+}
+textarea.twitch:active,
+textarea.twitch:focus{
+      outline:none;
+      border: 3px solid #9147ff;
+      background: #fff;
+}
+
+
+/* Input area default*/
+input {
+  margin-left: 2rem;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+/* Twitch Purple Style  */
+input.twitch{
+  font-size: 14px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+  display: block;
+  height: 36px;
+}
+input.twitch:hover {
+      border-color: #ccc;
+}
+input.twitch:active,
+input.twitch:focus{
+      outline:none;
+      border: 3px solid #9147ff;
+      background: #fff;
+}
+
+
+
 @media (hover: hover) {
   a:hover {
     /* background-color: hsla(160, 100%, 37%, 0.2); */
-    background-color: hsla(283, 95%, 83%, 0.2);
+    background-color: hsla(61, 95%, 77%, 0.37);
   }
 }
 
 @media (max-width: 1280px) {
   body {
-    display: flex;
+    display: block;
     place-items: center;
     justify-content: center;
   }
 
   #app {
-    display: grid;
+    display: block;
     flex-direction: column;
     grid-template-rows: 80fr 200fr;
   }

@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import SubmitQuestion from '../HelpPage/SubmitQuestion.vue'
+    //@ts-ignore
+    import SubmitQuestion from './SubmitQuestion.vue'
+    //@ts-ignore
+    import Questions from "./Questions.vue"
 </script>
 
 <template>
     <div>
-        <h4>Ask me a question</h4>
-
+        <h4>Send me a question</h4>
+        <Questions />
         <SubmitQuestion />
     </div>
 </template>

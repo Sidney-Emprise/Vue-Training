@@ -5,7 +5,7 @@
 <template>
     <div>
         <h4 class="section-heading">Skills</h4>
-        <table>
+        <table class="skills">
             <tbody>
                 <tr>
                     <td>
@@ -37,17 +37,3 @@
         
     </div>
 </template>
-
-<!-- CSS -->
- <style lang="css">
-table {
-    display: grid;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 10px;
-    justify-content: start;
-}
-/* td {
-    justify-content: top;
-} */
-</style>

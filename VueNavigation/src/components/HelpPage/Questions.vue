@@ -3,19 +3,16 @@
 </script>
 
 <template>
-    <div>
-        <p>Subject: <input v-model="subject" placeholder="Reason for Contact" /></p>
-        <p>Body:  <textarea v-model="body" placeholder="Description" /></p>
-      <div>
-          
-      </div>
-    </div>
+    <table class="purpleBubble">
+        <tbody>
+          <tr>
+            <td class="labelColumn">Subject:</td>
+            <td><input class="twitch" placeholder="Reason for Contact" /></td>
+          </tr>
+          <tr>
+            <td class="labelColumn">Body:</td>
+            <td><textarea class="twitch" placeholder="Description" ></textarea></td>
+          </tr>
+      </tbody>
+    </table>
 </template>
-
-
-<style lang="css">
-p {
-  display:block;
-}
-
-</style>
